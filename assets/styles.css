@@ -1,0 +1,211 @@
+
+    body {
+        font-family: "Roboto", sans-serif;
+        background-image: url(/assets/img/iconned-background.jpg);
+    }
+
+    h1, h2 {
+        background: linear-gradient(to right, #9eff8d, rgb(180, 53, 202));
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+        font-family: "Roboto Mono", monospace;
+        padding-left: 50px;
+        font-size: 30px;
+        color: white;
+        margin-top: 0;
+    }
+
+    h4 {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+        color: white;
+        margin-top: 0;
+    }
+
+    p {
+        color: white;
+        line-height: 22px;
+    }
+
+    br {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .page-body{
+        border-radius: 20px;
+        width:min-content;
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        background-image: url(/assets/img/off-dark-background.jpg);
+    }
+
+    hr {
+        height: 100px;
+        align-self: center;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .icon, .personal-info {
+        display: flex;
+        padding: 10px;
+    }
+
+    .personal-info {
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .personal-info > h1 {
+        margin-bottom: 0px;
+    }
+
+    .icon {
+        max-width: 300px;
+    }
+
+    .icon > img {
+        border-radius: 50%;
+        width: 50%;
+        height: auto;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 5px;
+        border-color: #9eff8d;
+    }
+
+    .tech-skills{
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 250px 250px 250px ;
+        grid-template-rows: 100px 100px;
+        gap: 20px;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .skill {
+        font-family: "Roboto Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: #60575794;
+        box-shadow: black;
+    }
+
+    .text-dev {
+        align-self: left;
+    }
+
+    .text-dev > p {
+        padding-left: 10px;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .icon-dev {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .icon-dev > i {
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+
+    .description {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 50px;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+
+    .social-media > h4 {
+        padding-left: 50px;
+    }
+
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+@media (max-width: 768px) {
+    .page-body {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon > img {
+        width: 70%; 
+        max-width: 150px; 
+    }
+
+    .tech-skills {
+        grid-template-columns: 1fr; 
+        padding: 0 5px; 
+    }
+
+    .social-media {
+        flex-direction: column; 
+        align-items: center; 
+        padding-left: 0; 
+    }
+
+    .social-media > h4 {
+        padding-left: 0; 
+    }
+
+    hr {
+        all: unset;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page-body {
+        width: 80%;
+    }
+
+    .tech-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-media {
+        justify-content: center; 
+    }
+}
